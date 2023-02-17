@@ -1,0 +1,29 @@
+.mainpage {
+  width: 100%;
+}
+
+.main-content {
+  width: 100%;
+  margin-inline: 10px 25px;
+  position: relative;
+}
+
+.videos {
+  width: 100%;
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px 20px;
+}
+
+@media (min-width: 1300px) {
+  .videos {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .main-content {
+    max-width: 100%;
+    margin-inline: 272px 25px;
+    overflow: hidden;
+  }
+}

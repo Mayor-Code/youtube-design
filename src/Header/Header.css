@@ -1,0 +1,72 @@
+.header {
+  padding: 0.625rem 1.5625rem;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--primary-background);
+}
+
+.menubar {
+  margin-right: 1.25rem;
+}
+
+.header-middle-items {
+  width: 60%;
+}
+
+.input-box {
+  width: 70%;
+  height: 2.5rem;
+  border: 1.5px solid #ccc;
+  border-radius: 2.5rem;
+  overflow: hidden;
+  caret-color: var(--text-primary);
+  padding-left: 1.25rem;
+}
+
+input.search-box {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding: 1.875 0;
+  font-size: 0.95rem;
+  font-weight: 545;
+}
+
+input.search-box::placeholder {
+  color: #ccc;
+}
+
+.search-btn {
+  width: 5rem;
+  height: 100%;
+  border-left: 1px solid #ccc;
+  border-top-right-radius: 2.5rem;
+  border-bottom-right-radius: 2.5rem;
+  background-color: #f8f8f8;
+}
+
+.search-icon {
+  width: 2.5rem;
+  height: 100%;
+  border-top-left-radius: 2.5rem;
+  border-bottom-left-radius: 2.5rem;
+  transition: all 1s ease-in;
+}
+
+.voice-search,
+.create-options,
+.notifications,
+.profile-img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  margin-left: 1.25rem;
+}
+
+img.dp {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+}

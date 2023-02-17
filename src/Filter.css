@@ -1,0 +1,111 @@
+.filter {
+  width: calc(100% - 64px);
+  height: 60px;
+  position: fixed;
+  background-color: var(--primary-background);
+  overflow: hidden;
+}
+
+.filter-item:hover {
+  background-color: var(--hover-background);
+}
+
+.filter-item {
+  padding: 7px 10px;
+  margin-right: 12px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  min-width: fit-content;
+  max-width: 15rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  background-color: var(---additive-background);
+  cursor: pointer;
+}
+
+.filter-item.active {
+  background-color: var(--text-primary);
+}
+
+.filter-item.active .filter-text {
+  color: #fff;
+}
+
+.scroll {
+  color: #fff;
+  width: 48px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 0;
+  background: #fff;
+}
+
+.scroll::after {
+  position: absolute;
+  content: "";
+  width: 48px;
+  background: linear-gradient(90deg, var(--primary-background), transparent);
+  height: 100%;
+  right: -48px;
+}
+
+.scroll::before {
+  position: absolute;
+  content: "";
+  width: 48px;
+  background: linear-gradient(
+    90deg,
+    transparent 2%,
+    var(--primary-background),
+    var(--primary-background)
+  );
+  height: 100%;
+  left: -48px;
+}
+
+.filter-cover {
+  width: 100%;
+  overflow: hidden;
+}
+
+.filter-item-container {
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+
+.filter-item-container::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-icon {
+  width: 40px;
+  height: auto;
+  border-radius: 50%;
+  padding: 10px;
+  z-index: 20;
+  cursor: pointer;
+  transition: all 0.55s ease;
+}
+
+.max-filter {
+  width: calc(100% - 304px);
+  height: 60px;
+  position: fixed;
+  background-color: var(--primary-background);
+  overflow: hidden;
+}
+
+.scroll-icon:hover {
+  background-color: var(--hover-background);
+  margin-left: -5px;
+}
+
+@media (min-width: 1300px) {
+  .filter {
+    width: calc(100% - 304px);
+  }
+}
